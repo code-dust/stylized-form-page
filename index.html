@@ -1,0 +1,57 @@
+﻿<!DOCTYPE HTML><!---->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Registration</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	
+</head>
+	
+
+<body>
+<div id="reg_login-form" class="reg_login-form">
+	<div class="form-content">
+	  <div class="form-wrap left">
+		<div class="img-box">
+		  <img src="imgs/c281808f1d6c3f05bafe8a5c8026a186edited1.jpg">  
+		</div>
+	  </div>	
+	  <div class="form-wrap right">
+		<div class="tabs">
+		   <ul>
+			  <li class="toggle-btn-style"></li> 
+			  <li class="login_tab toggle-btn">LOGIN</li> 
+			  <li class="signup_tab toggle-btn">SIGNUP</li>
+		   </ul>  
+		</div>
+		<div class="wrap">  
+		  <form id="login-form" class="input-group">
+		    <div class="form-control"><input type="text" class="input-field" placeholder="Username" id="username"><small>Error</small></div>
+		    <div class="form-control"><input type="password" class="input-field" placeholder="Password" id="password"><small>Error</small></div>
+		    <div class="terms"><input type="checkbox" class="check-box"><span>Remember password</span></div>	
+		    <button type="submit" class="submit-btn">LOGIN</button>	
+		  </form>
+			
+		  <form id="signup-form" class="input-group" novalidate><!--10:35pm 15/7/2022 the novalidate prevents for example the input email type from attempting to validate its content . instead of putting novalidate here , i could have just replaced 'type="email"' with  'type="text"' so that no validation of the email occurs-->
+		    <div class="form-control"><input type="text" class="input-field" placeholder="Username" id="new-username"><small>Error</small></div>
+			  
+		    <div class="form-control"><input type="email" class="input-field" placeholder="Email" id="new-email"><small>Error</small></div>
+			  
+		    <div class="form-control"><input type="password" class="input-field" placeholder="Password" id="new-password1"><small>Error</small></div>
+			  
+			<div class="form-control"><input type="password" class="input-field" placeholder="Password" id="new-password2"><small>Error</small></div>
+			
+		    <div class="terms"><input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span></div>
+			  
+		    <button type="submit" class="submit-btn">SIGNUP</button>	
+		  </form>
+	    </div>		
+      </div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/script.js">
+</script>	
+</body>
+</html>
